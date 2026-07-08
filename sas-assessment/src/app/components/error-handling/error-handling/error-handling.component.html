@@ -1,0 +1,59 @@
+<!-- <div *ngIf = "loading">
+  Loading...
+</div>
+
+
+<div *ngIf = "errorMessage">
+  {{errorMessage}}
+</div>
+
+
+<h2>User List</h2>
+<ul>
+  <li *ngFor="let user of users">
+    {{user.name}}
+  </li>
+</ul> -->
+<div>
+  <button (click)="showMethod('basic')">
+    Basic
+  </button>
+</div>
+<div>
+  <button (click)="showMethod('catchError')">
+    catchError
+  </button>
+</div>
+<div>
+  <button (click)="showMethod('throwError')">
+    throwError
+  </button>
+</div>
+<div>
+  <button (click)="showMethod('retry')">
+    retry
+  </button>
+</div>
+<div>
+  <button (click)="showMethod('retryWhen')">
+    retryWhen
+  </button>
+</div>
+<div>
+  <button (click)="showMethod('finalize')">
+    finalize
+  </button>
+</div>
+<div>
+  <button (click)="showMethod('combined')">
+    Combined
+  </button>
+</div>
+
+<app-basic *ngIf="showVariable === 'basic'"></app-basic>
+<app-catch-error *ngIf="showVariable === 'catchError'"></app-catch-error>
+<app-throw-error *ngIf="showVariable === 'throwError'"></app-throw-error>
+<app-retry *ngIf="showVariable === 'retry'"></app-retry>
+<app-retry-when *ngIf="showVariable === 'retryWhen'"></app-retry-when>
+<app-finalize *ngIf="showVariable === 'finalize'"></app-finalize>
+<app-combined *ngIf="showVariable === 'combined'"></app-combined>

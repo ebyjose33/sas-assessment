@@ -1,0 +1,17 @@
+<div>
+    <button (click)="showMethod('toSignal')">
+    toSignal
+    </button>
+</div>
+
+<div>
+    <button (click)="showMethod('toObservable')">
+    toObservable
+    </button>
+</div>
+<div>
+    <app-to-signal *ngIf = "showVariable === 'toSignal'"></app-to-signal>
+</div>
+<div>
+    <app-to-observable *ngIf = "showVariable === 'toObservable'"></app-to-observable>
+</div>
