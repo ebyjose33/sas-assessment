@@ -15,6 +15,7 @@ import { RetryWhenComponent } from './components/error-handling/retry-when/retry
 import { FinalizeComponent } from './components/error-handling/finalize/finalize.component';
 import { BasicComponent } from './components/error-handling/basic/basic.component';
 import { CombinedComponent } from './components/error-handling/combined/combined.component';
+import { TakeUntilDestroyedComponent } from './components/rxjs-interop/take-until-destroyed/take-until-destroyed.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { CombinedComponent } from './components/error-handling/combined/combined
     RetryWhenComponent,
     FinalizeComponent,
     BasicComponent,
-    CombinedComponent
+    CombinedComponent,
+    TakeUntilDestroyedComponent
   ],
   imports: [
     BrowserModule,

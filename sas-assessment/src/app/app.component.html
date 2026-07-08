@@ -15,10 +15,10 @@
     {{user.name}}
   </li>
 </ul> -->
-<button (click)="showMethod('error')">
+<button (click)="showMethod('error')" class="btn">
   Error Handling Strategies
 </button>
-<button (click)="showMethod('rxjs')">
+<button (click)="showMethod('rxjs')" class="btn">
   Rxjs interop
 </button>
 <app-error-handling *ngIf = "showVariable === 'error'"></app-error-handling>

@@ -1,12 +1,18 @@
 <div>
-    <button (click)="showMethod('toSignal')">
+    <button (click)="showMethod('toSignal')" class="btn">
     toSignal
     </button>
 </div>
 
 <div>
-    <button (click)="showMethod('toObservable')">
+    <button (click)="showMethod('toObservable')" class="btn">
     toObservable
+    </button>
+</div>
+
+<div>
+    <button (click)="showMethod('takeUntilDestroyed')" class="btn">
+    takeUntilDestroyed
     </button>
 </div>
 <div>
@@ -14,4 +20,7 @@
 </div>
 <div>
     <app-to-observable *ngIf = "showVariable === 'toObservable'"></app-to-observable>
+</div>
+<div>
+    <app-take-until-destroyed *ngIf = "showVariable === 'takeUntilDestroyed'"></app-take-until-destroyed>
 </div>
