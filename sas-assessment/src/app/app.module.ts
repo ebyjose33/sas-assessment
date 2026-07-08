@@ -16,6 +16,9 @@ import { FinalizeComponent } from './components/error-handling/finalize/finalize
 import { BasicComponent } from './components/error-handling/basic/basic.component';
 import { CombinedComponent } from './components/error-handling/combined/combined.component';
 import { TakeUntilDestroyedComponent } from './components/rxjs-interop/take-until-destroyed/take-until-destroyed.component';
+import { OutputFromObservableComponent } from './components/rxjs-interop/output-from-observable/output-from-observable.component';
+import { OutputToObservableComponent } from './components/rxjs-interop/output-to-observable/output-to-observable.component';
+import { OutputFromObservableChildComponent } from './components/rxjs-interop/output-from-observable-child/output-from-observable-child.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +35,10 @@ import { TakeUntilDestroyedComponent } from './components/rxjs-interop/take-unti
     FinalizeComponent,
     BasicComponent,
     CombinedComponent,
-    TakeUntilDestroyedComponent
+    TakeUntilDestroyedComponent,
+    OutputFromObservableComponent,
+    OutputToObservableComponent,
+    OutputFromObservableChildComponent
   ],
   imports: [
     BrowserModule,
