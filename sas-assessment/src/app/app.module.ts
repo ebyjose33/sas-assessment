@@ -19,6 +19,7 @@ import { TakeUntilDestroyedComponent } from './components/rxjs-interop/take-unti
 import { OutputFromObservableComponent } from './components/rxjs-interop/output-from-observable/output-from-observable.component';
 import { OutputToObservableComponent } from './components/rxjs-interop/output-to-observable/output-to-observable.component';
 import { OutputFromObservableChildComponent } from './components/rxjs-interop/output-from-observable-child/output-from-observable-child.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { OutputFromObservableChildComponent } from './components/rxjs-interop/ou
     TakeUntilDestroyedComponent,
     OutputFromObservableComponent,
     OutputToObservableComponent,
-    OutputFromObservableChildComponent
+    OutputFromObservableChildComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

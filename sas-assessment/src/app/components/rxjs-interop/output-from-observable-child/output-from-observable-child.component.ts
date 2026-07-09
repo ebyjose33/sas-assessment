@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { interval, map } from 'rxjs';
-import { outputFromObservable } from '@angular/core/rxjs-interop';
+// import { outputFromObservable } from '@angular/core/rxjs-interop';
 
 @Component({
   selector: 'app-output-from-observable-child',
@@ -13,6 +13,6 @@ export class OutputFromObservableChildComponent {
     map(value => value +1)
   );
 
-  counterChange = outputFromObservable(this.counter$);
+  // counterChange = outputFromObservable(this.counter$);
 
 }
